@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>我的第一个公网网页</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero" aria-labelledby="page-title">
+        <p class="eyebrow">Static Website Demo</p>
+        <h1 id="page-title">你好，这是一个准备部署到 Zeabur 的简单网页。</h1>
+        <p class="intro">
+          这是一个纯静态页面，只包含 HTML 和 CSS。它可以先在本地预览，确认后再发布到公网。
+        </p>
+        <div class="actions" aria-label="页面操作">
+          <a class="button primary" href="#status">查看状态</a>
+          <a class="button secondary" href="https://zeabur.com" target="_blank" rel="noreferrer">Zeabur</a>
+        </div>
+      </section>
+
+      <section id="status" class="status-grid" aria-label="部署准备状态">
+        <article class="status-card">
+          <span class="status-number">01</span>
+          <h2>本地网页</h2>
+          <p>当前项目是静态站点，入口文件是 index.html。</p>
+        </article>
+        <article class="status-card">
+          <span class="status-number">02</span>
+          <h2>本地预览</h2>
+          <p>可以通过本地静态服务器检查样式和页面内容。</p>
+        </article>
+        <article class="status-card">
+          <span class="status-number">03</span>
+          <h2>公网部署</h2>
+          <p>确认后可使用 Zeabur CLI 或 Git 仓库方式发布。</p>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
